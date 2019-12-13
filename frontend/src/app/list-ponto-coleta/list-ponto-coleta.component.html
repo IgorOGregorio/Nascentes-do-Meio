@@ -1,7 +1,13 @@
+<nav class="navbar col-4">
+    <input class="form-control" type="text" name="search" [(ngModel)]="filter" placeholder="Buscar por nome">
+    <!-- Input que deve ser adicionado -->
+</nav>
+
 <div class="container" class="col-12">
     <table class="table table-striped ">
         <thead>
             <tr>
+
                 <th>Nome</th>
                 <th>Endereço</th>
                 <th>Longitude</th>
@@ -9,11 +15,13 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor='let ponto of listPontos'>
+            <tr *ngFor='let ponto of listPontos | filter:filter; let i = index'>
+
                 <td>{{ponto.nome}}</td>
                 <td>{{ponto.endereco}}</td>
                 <td>{{ponto.latitude}}</td>
                 <td>{{ponto.longitude}}</td>
+                <td><button class="btn btn-primary" type="button" (click)="showEditPonto(ponto.id)">Editar</button></td>
             </tr>
         </tbody>
     </table>

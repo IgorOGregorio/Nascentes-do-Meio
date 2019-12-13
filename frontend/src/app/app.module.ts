@@ -8,6 +8,8 @@ import { AddPontoColetaComponent } from './add-ponto-coleta/add-ponto-coleta.com
 import { ListPontoColetaComponent } from './list-ponto-coleta/list-ponto-coleta.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { EditPontoColetaComponent } from './edit-ponto-coleta/edit-ponto-coleta.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter'; // Importação
 
 
 @NgModule({
@@ -16,12 +18,14 @@ import { FormsModule } from '@angular/forms';
     AppHomeComponent,
     NavBarComponent,
     AddPontoColetaComponent,
-    ListPontoColetaComponent
+    ListPontoColetaComponent,
+    EditPontoColetaComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    Ng2SearchPipeModule // Nosso módulo recém instalado
   ],
   providers: [],
   bootstrap: [AppComponent]

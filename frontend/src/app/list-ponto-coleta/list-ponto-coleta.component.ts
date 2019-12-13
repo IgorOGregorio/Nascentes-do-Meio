@@ -10,15 +10,16 @@ import { PontoColetaAPIService } from '../api/ponto-coleta-api.service';
 export class ListPontoColetaComponent implements OnInit {
 
   public listPontos;
+  
 
   constructor(private home: AppHomeComponent,
     private pontoApiService: PontoColetaAPIService,) { }
 
   ngOnInit() {
-    this.getListCategories();
+    this.getListPontos();
   }
 
-  getListCategories() {
+  getListPontos() {
     this.pontoApiService.getPontosColeta()
       .then((pontos) => {
         this.listPontos = pontos;
@@ -27,6 +28,10 @@ export class ListPontoColetaComponent implements OnInit {
       }).catch((error) => {
         console.log({ error });
       });
+  }
+
+  showEditPonto(id){
+    this.home.goEditPonto(id);
   }
 
   

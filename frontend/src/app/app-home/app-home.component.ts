@@ -9,6 +9,8 @@ export class AppHomeComponent implements OnInit {
 
   addPonto = false;
   listPonto = false;
+  editPonto = false;
+  id: number;
 
   constructor() { }
 
@@ -19,11 +21,21 @@ export class AppHomeComponent implements OnInit {
   goAddPonto(){
     this.addPonto = true; 
     this.listPonto = false;
+    this.editPonto = false;
+
   }
 
   goListPonto(){
     this.addPonto = false; 
     this.listPonto = true;
+    this.editPonto = false;
+  }
+
+  goEditPonto(id: number){
+    this.id = id;
+    this.addPonto = false; 
+    this.listPonto = false;
+    this.editPonto = true;
   }
 
 }
