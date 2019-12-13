@@ -1,0 +1,46 @@
+[2019-12-13 02:11:44.169] [exthost] [info] extension host started
+[2019-12-13 02:11:44.253] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2019-12-13 02:11:44.255] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/21/usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2019-12-13 02:11:44.277] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2019-12-13 02:11:44.278] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/21/usr/share/code/resources/app/extensions/emmet/dist/extension
+[2019-12-13 02:11:44.380] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.git","_lower":"vscode.git"},"activationEvent":"*"}
+[2019-12-13 02:11:44.381] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/21/usr/share/code/resources/app/extensions/git/dist/main
+[2019-12-13 02:11:44.535] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2019-12-13 02:11:44.535] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/21/usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2019-12-13 02:11:44.546] [exthost] [info] ExtensionService#_doActivateExtension eamodio.gitlens {"startup":true,"extensionId":{"value":"eamodio.gitlens","_lower":"eamodio.gitlens"},"activationEvent":"*"}
+[2019-12-13 02:11:44.546] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/igor/.vscode/extensions/eamodio.gitlens-10.2.0/dist/extension
+[2019-12-13 02:11:44.723] [exthost] [info] eager extensions activated
+[2019-12-13 02:11:45.282] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features {"startup":false,"extensionId":{"value":"vscode.html-language-features","_lower":"vscode.html-language-features"},"activationEvent":"onLanguage:html"}
+[2019-12-13 02:11:45.282] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/21/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain
+[2019-12-13 02:11:45.381] [exthost] [info] ExtensionService#_doActivateExtension leizongmin.node-module-intellisense {"startup":false,"extensionId":{"value":"leizongmin.node-module-intellisense","_lower":"leizongmin.node-module-intellisense"},"activationEvent":"onLanguage:html"}
+[2019-12-13 02:11:45.381] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/igor/.vscode/extensions/leizongmin.node-module-intellisense-1.5.0/out/src/extension
+[2019-12-13 02:11:45.393] [exthost] [info] ExtensionService#_doActivateExtension lonefy.vscode-JS-CSS-HTML-formatter {"startup":false,"extensionId":{"value":"lonefy.vscode-JS-CSS-HTML-formatter","_lower":"lonefy.vscode-js-css-html-formatter"},"activationEvent":"onLanguage:html"}
+[2019-12-13 02:11:45.393] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/igor/.vscode/extensions/lonefy.vscode-js-css-html-formatter-0.2.3/out/src/extension
+[2019-12-13 02:11:54.398] [exthost] [info] extension host started
+[2019-12-13 02:11:54.426] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2019-12-13 02:11:54.427] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/21/usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2019-12-13 02:11:54.434] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2019-12-13 02:11:54.434] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/21/usr/share/code/resources/app/extensions/emmet/dist/extension
+[2019-12-13 02:11:54.507] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.git","_lower":"vscode.git"},"activationEvent":"*"}
+[2019-12-13 02:11:54.507] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/21/usr/share/code/resources/app/extensions/git/dist/main
+[2019-12-13 02:11:54.605] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2019-12-13 02:11:54.605] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/21/usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2019-12-13 02:11:54.614] [exthost] [info] ExtensionService#_doActivateExtension eamodio.gitlens {"startup":true,"extensionId":{"value":"eamodio.gitlens","_lower":"eamodio.gitlens"},"activationEvent":"*"}
+[2019-12-13 02:11:54.615] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/igor/.vscode/extensions/eamodio.gitlens-10.2.0/dist/extension
+[2019-12-13 02:11:54.713] [exthost] [info] eager extensions activated
+[2019-12-13 02:13:54.503] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"extensionId":{"value":"vscode.extension-editing","_lower":"vscode.extension-editing"},"activationEvent":"onLanguage:typescript"}
+[2019-12-13 02:13:54.503] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/21/usr/share/code/resources/app/extensions/extension-editing/dist/extension
+[2019-12-13 02:13:54.569] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"extensionId":{"value":"vscode.typescript-language-features","_lower":"vscode.typescript-language-features"},"activationEvent":"onLanguage:typescript"}
+[2019-12-13 02:13:54.569] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/21/usr/share/code/resources/app/extensions/typescript-language-features/dist/extension
+[2019-12-13 02:13:54.656] [exthost] [info] ExtensionService#_doActivateExtension leizongmin.node-module-intellisense {"startup":false,"extensionId":{"value":"leizongmin.node-module-intellisense","_lower":"leizongmin.node-module-intellisense"},"activationEvent":"onLanguage:typescript"}
+[2019-12-13 02:13:54.656] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/igor/.vscode/extensions/leizongmin.node-module-intellisense-1.5.0/out/src/extension
+[2019-12-13 02:14:06.303] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"extensionId":{"value":"vscode.configuration-editing","_lower":"vscode.configuration-editing"},"activationEvent":"onLanguage:jsonc"}
+[2019-12-13 02:14:06.303] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/21/usr/share/code/resources/app/extensions/configuration-editing/dist/extension
+[2019-12-13 02:14:06.321] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"extensionId":{"value":"vscode.json-language-features","_lower":"vscode.json-language-features"},"activationEvent":"onLanguage:jsonc"}
+[2019-12-13 02:14:06.322] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/21/usr/share/code/resources/app/extensions/json-language-features/client/dist/jsonMain
+[2019-12-13 02:20:12.537] [exthost] [info] ExtensionService#_doActivateExtension lonefy.vscode-JS-CSS-HTML-formatter {"startup":false,"extensionId":{"value":"lonefy.vscode-JS-CSS-HTML-formatter","_lower":"lonefy.vscode-js-css-html-formatter"},"activationEvent":"onLanguage:javascript"}
+[2019-12-13 02:20:12.537] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/igor/.vscode/extensions/lonefy.vscode-js-css-html-formatter-0.2.3/out/src/extension
+[2019-12-13 02:48:25.820] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features {"startup":false,"extensionId":{"value":"vscode.css-language-features","_lower":"vscode.css-language-features"},"activationEvent":"onLanguage:css"}
+[2019-12-13 02:48:25.821] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/21/usr/share/code/resources/app/extensions/css-language-features/client/dist/cssMain
+[2019-12-13 02:57:42.171] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features {"startup":false,"extensionId":{"value":"vscode.html-language-features","_lower":"vscode.html-language-features"},"activationEvent":"onLanguage:html"}
+[2019-12-13 02:57:42.171] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/21/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain

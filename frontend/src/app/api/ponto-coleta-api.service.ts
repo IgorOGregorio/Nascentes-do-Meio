@@ -12,11 +12,15 @@ export class PontoColetaAPIService {
   constructor(private httpClient: HttpClient) { }
 
   getPontosColeta() {
-    return this.httpClient.get(`${ApiUrl}/pontos-coleta`).toPromise();
+    return this.httpClient.get(`${ApiUrl}/pontos-coleta/`).toPromise();
   }
 
   getPontoColetaById(id){
     return this.httpClient.get(`${ApiUrl}/pontos-coleta/${id}`).toPromise();
+  }
+
+  getPontoColetaByName(json){
+    return this.httpClient.post(`${ApiUrl}/pontos-coleta/nome`, json).toPromise();
   }
 
   addPontosColeta(json){

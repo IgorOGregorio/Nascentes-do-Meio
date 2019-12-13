@@ -17,7 +17,7 @@ export interface pontoColeta {
 export class EditPontoColetaComponent implements OnInit {
 
   @Input() id;
-  public listPonto = null;
+  public pontoId = null;
   geo;
   listGeo;
 
@@ -32,8 +32,8 @@ export class EditPontoColetaComponent implements OnInit {
   getPonto(id){
     this.pontoApiService.getPontoColetaById(id)
       .then((ponto) => {
-        this.listPonto = ponto;
-        console.log(this.listPonto);
+        this.pontoId = ponto;
+        console.log(this.pontoId);
         console.log('ok');
       }).catch((error) => {
         console.log({ error });
@@ -42,32 +42,36 @@ export class EditPontoColetaComponent implements OnInit {
 
   
 
-  updatePonto(lat, lng, nome, endereco) {
+  updatePonto(nome, endereco, jsonGeo) {
+    //console.log(this.jsonGeo);
     let json = {
       'nome': nome,
       'endereco': endereco,
-      'latitude': lat,
-      'longitude': lng
+      'latitude': jsonGeo.lat,
+      'longitude': jsonGeo.lng
     }
     this.pontoApiService.updatePontoColeta(json, this.id).then((ponto) => {
-      console.log(json);
+     // console.log(json);
       this.home.goListPonto();
     });
   }
 
   
-  mostraGeocode(nome, endereco) {
+  mostraGeocode(endereco, nome) {
     this.pontoApiService.getGeocode(endereco)
       .then((geocode) => {
-        //console.log(geocode);
-        //console.log('ok');
         this.geo = geocode;
         this.listGeo = this.geo.results;
-        this.updatePonto(this.listGeo[0].locations[0].latLng.lat, this.listGeo[0].locations[0].latLng.lng, nome, endereco);
+        let jsonGeo = {
+          'lat': this.listGeo[0].locations[0].latLng.lat.toString(),
+          'lng': this.listGeo[0].locations[0].latLng.lng.toString()
+        }
+      this.updatePonto(nome, endereco, jsonGeo);
       }).catch((error) => {
         console.log({ error });
       });
-    
+      //return this.jsonGeo;
+
   }
 
 }

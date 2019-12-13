@@ -30,6 +30,25 @@ export class ListPontoColetaComponent implements OnInit {
       });
   }
 
+  getPontosByName(nome) {
+    if(nome){
+      let json = {
+        'nome': nome
+      }
+      this.pontoApiService.getPontoColetaByName(json)
+        .then((ponto) => {
+          console.log(ponto);
+          this.listPontos = ponto;
+          //console.log(this.listPontos);
+          console.log('ok');
+        }).catch((error) => {
+          console.log({ error });
+        });
+    }else{
+      this.getListPontos();
+    }
+  }
+
   showEditPonto(id){
     this.home.goEditPonto(id);
   }

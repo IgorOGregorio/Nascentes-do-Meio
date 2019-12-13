@@ -20,28 +20,17 @@ function execSQLQuery(sqlQry, res) {
 }
 
 exports.get = (req, res) => {
-    execSQLQuery('SELECT * FROM ponto_coleta', res);
-};
-
-
-exports.getById = (req, res) => {
     let filter = '';
-    execSQLQuery(`SELECT * FROM ponto_coleta where id = '${req.params.id}'`, res);
-};
-
-exports.getByName = (req, res) => {
-    const nome = req.body.nome;
-    execSQLQuery(`SELECT * FROM ponto_coleta where nome like '%${nome}%'`, res);
-}
-
-/*
-exports.getBylongitude = (req, res) => {
-    let filter = '';
-    if (req.params.id) filter = ' WHERE id="' + req.params.id + '"';
+    if (req.params.id) filter = ` WHERE id = '${req.params.id}'`;
     execSQLQuery('SELECT * FROM ponto_coleta' + filter, res);
 };
-*/
 
+exports.byName = (req, res) => {
+    const nome = req.body.nome;
+    execSQLQuery(`SELECT * FROM ponto_coleta where nome = '${nome}'`, res);
+
+
+};
 
 exports.post = (req, res, next) => {
     const nome = req.body.nome;

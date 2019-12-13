@@ -1,8 +1,13 @@
-<nav class="navbar col-4">
-    <input class="form-control" type="text" name="search" [(ngModel)]="filter" placeholder="Buscar por nome">
-    <!-- Input que deve ser adicionado -->
-</nav>
-
+<form action="/action_page.php">
+    <div class="form-inline">
+        <div>
+            <input type="text" class="form-control m-4" [(ngModel)]='nome' name="nome" placeholder="Buscar por nome">
+        </div>
+        <div>
+            <button type="submit" class="btn btn-success" (click)='getPontosByName(nome)'>Confirmar</button>
+        </div>
+    </div>
+</form>
 <div class="container" class="col-12">
     <table class="table table-striped ">
         <thead>
@@ -15,7 +20,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor='let ponto of listPontos | filter:filter; let i = index'>
+            <tr *ngFor='let ponto of listPontos'>
 
                 <td>{{ponto.nome}}</td>
                 <td>{{ponto.endereco}}</td>

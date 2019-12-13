@@ -9,6 +9,10 @@ export interface pontoColeta {
   longitude: string;
 }
 
+interface Geo {
+  lat: string;
+  lng: string;
+}
 
 @Component({
   selector: 'app-add-ponto-coleta',
@@ -25,39 +29,46 @@ export class AddPontoColetaComponent implements OnInit {
   geo;
   listGeo;
 
+
+
   constructor(private home: AppHomeComponent,
-    private pontoApiService: PontoColetaAPIService,) { }
+    private pontoApiService: PontoColetaAPIService, ) { }
 
   ngOnInit() {
   }
 
-  addPonto(lat, lng) {
-    let json = {
-      'nome': this.nome,
-      'endereco': this.endereco,
-      'latitude': lat,
-      'longitude': lng
-    }
-    this.pontoApiService.addPontosColeta(json).then((ponto) => {
-      console.log(json);
-      this.home.goListPonto();
-    });
+  addPonto(nome, endereco, jsonGeo) {
+    //console.log(jGeo);
+      let json = {
+        'nome': nome,
+        'endereco': endereco,
+        'latitude': jsonGeo.lat,
+        'longitude': jsonGeo.lng
+      }
+      this.pontoApiService.addPontosColeta(json).then((ponto) => {
+        //console.log(json);
+        this.home.goListPonto();
+      });
+
+    
+    //console.log(this.jsonGeo);
+
   }
 
-  
-  mostraGeocode() {
-    this.pontoApiService.getGeocode(this.endereco)
+  mostraGeocode(nome, endereco): any{
+    
+    this.pontoApiService.getGeocode(endereco)
       .then((geocode) => {
-        //console.log(geocode);
-        //console.log('ok');
         this.geo = geocode;
         this.listGeo = this.geo.results;
-        //console.log(this.listGeo[0].locations[0].latLng);
-        this.addPonto(this.listGeo[0].locations[0].latLng.lat, this.listGeo[0].locations[0].latLng.lng);
+        let jsonGeo = {
+          'lat': this.listGeo[0].locations[0].latLng.lat.toString(),
+          'lng': this.listGeo[0].locations[0].latLng.lng.toString()
+        }
+        this.addPonto(nome, endereco, jsonGeo);
       }).catch((error) => {
         console.log({ error });
       });
-    
   }
 
 }
